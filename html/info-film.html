@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/png" href="picture/iconlogo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+         <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Thu vien animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Khai bao fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css2?family=Chewy&family=Fira+Sans+Extra+Condensed&family=Asap+Condensed&family=Roboto+Condensed&family=Bungee+Inline&family=VT323&family=Fira+Sans+Extra+Condensed&family=IBM+Plex+Sans&family=Fira+Sans+Extra+Condensed&family=Bangers&family=Bungee+Inline&family=Asap&family=Pangolin&family=Francois+One&family=Cabin&family=Special+Elite&display=swap' rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <!-- Thu vien jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Mali:ital,wght@1,400;1,600&family=Pangolin&family=Roboto+Slab:wght@700&family=Saira:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/timeline.css">
+       
+        <title>Thông tin phim</title>
+
+        <style type="text/css">
+            .ten_phim{
+                font-family: 'Patrick Hand SC';
+            }
+            .noi-dung{
+                font-family: Rosario;
+                font-size: 18px;
+                line-height: 100%;
+              
+            }
+            .muc{
+                font-family: 'Archivo', sans-serif;
+                font-size: 18px;
+                line-height: 100%;
+               
+            }
+            .pay-fare{
+                height: 40px;
+                line-height: 40px;
+                width: 150px; 
+                margin-left: 0px;
+                background: linear-gradient(to right, #337AB7, #2B96D8);
+                text-align: center; 
+                cursor: pointer; 
+                border-radius: 4px;
+                color: white;
+                font-family: Asap Condensed;
+                font-weight: bold;
+                font-size: 22px;
+                letter-spacing: 1px;
+            }
+ 
+             .pay-fare:hover{
+                background: linear-gradient(to right, #2A6292, #2786C1);
+             }
+
+            @media screen and (max-width: 768px){
+                #trailer{
+                    height: 250px !important;
+                }
+            }
+        </style>
+    </head>
+     <!-- Thanh đăng nhập, đăng ký -->
+    <div class="bg-dark" id="parent-login-subcrible">
+        <div class="container text-right p-1" id="tab-login-subcrible">
+            <a href="login.html" id="login">Đăng nhập</a>
+            <span>/</span>
+            <a href="register.html" id="subcrible">Đăng ký</a>
+            <img src="https://www.worldglasstech.com/wp-content/uploads/2019/02/Flag-of-Vietnam.gif" width="28px" alt="">
+        </div>
+    </div>
+    <!-- Menu các chuyên mục -->
+    <div id="menu" class="sticky-top">
+        <div class="container d-flex justify-content-center align-items-center p-1">
+            <div class="row w-100 w-100">
+                <div class="col-md-9 col-lg-5">
+                    <div id="logo-sologan" class="d-flex justify-content-center align-items-center">
+                        <img id="logo" src="picture/logo.png" alt="" class="img-fluid">
+                        <div id="sologan">I LOVE YOU 3000</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-7 p-0">
+                    <div id="menus" class="h-100">
+                        <nav class="navbar navbar-expand-lg pr-0 h-100 navbar-light">
+                          <div class="navbar-brand d-block d-lg-none">Menu</div>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav d-flex w-100 justify-content-end">
+                              <a class="nav-item nav-link" href="home.html">TRANG CHỦ</a>
+                              <a class="nav-item nav-link" href="movies-playing.html">PHIM</a>
+                              <a class="nav-item nav-link" href="showtime.html">ĐẶT VÉ</a>
+                              <a class="nav-item nav-link" href="fare.html">GIÁ VÉ</a>
+                              <a class="nav-item nav-link" href="news-events.html">TIN TỨC VÀ SỰ KIỆN</a>
+                              <a class="nav-item nav-link" href="account.html">TÀI KHOẢN</a>
+                            </div>
+                          </div>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+   
+    <body style="font-family: Calibri;">   
+        <div style="background-color: #f5f5f5; padding: 30px"> 
+            <div class="container">
+                <h3 style="line-height: 100%; font-family: Oswald">
+                    <span style="font-size: 24px;">TRANG CHỦ</span>
+                    <span>></span>
+                    <span style="font-family: Oswald; color:#2D78B7" class="ten_phim"></span>
+                    <span class="badge badge-info" style="padding: 4px 13px; border-radius: 15px" id="hot"></span>
+                </h3>
+                <div class="row d-flex align-items-center py-3 ">
+                    <div class="col-md-3">
+                        <img id="anh" src="" alt="" class="img-fluid" style="border-radius: 25px" >
+                    </div>
+                    <!--load thông tin phim-->
+                    <div class="col-md-9 text-justify">
+                        <h4 class="ten_phim" style="font-size: 38px; font-weight: bold"></h4>
+                        <p style="font-family:'Source Sans Pro'; font-size: 19px" id="mo_ta"></p>
+                        <div class="row">
+                            <div class="col-md-3"><h6 class="muc">Đạo diễn:</h6></div>
+                            <div class="col-md-9"><p class="noi-dung" id="dao_dien"></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><h6 class="muc">Diễn viên:</h6></div>
+                            <div class="col-md-9"><p class="noi-dung" id="dien_vien"></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><h6 class="muc">Thể loại:</h6></div>
+                            <div class="col-md-9"><p class="noi-dung" id="the_loai"></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><h6 class="muc">Thời lượng:</h6></div>
+                            <div class="col-md-9"><p class="noi-dung" id="thoi_luong"></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><h6 class="muc">Ngôn ngữ:</h6></div>
+                            <div class="col-md-9"><p class="noi-dung" id="ngon_ngu"></p></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"><h6 class="muc">Ngày khởi chiếu:</h6></div>
+                            <div class="col-md-9"><p class="noi-dung" id="ngay_khoi_chieu"></p></div>
+                        </div>
+                        <div class="pay-fare">MUA VÉ</div> 
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div style="background-color: #444444; text-align: center; padding: 25px 20px">
+            <div class="container">
+                <div class="text-center" style="font-size: 45px; color: white"><span style="border-bottom: 5px solid #2276CC">TRAILER</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <iframe style="height: 450px; border: 4px solid white" class="w-100 my-3" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="trailer"></iframe>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>   
+            </div> 
+        </div> 
+
+
+
+        <!-- Footer -->
+    <div id="footer">
+        <div class="container h-100" >
+            <div class="row py-5" >
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <img class="w-75" src="picture/logo.png">
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Tuyển dụng</a>
+                    <a href="#">Hoạt động xã hội</a>
+                    <a href="#">Liên hệ quảng cáo</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <h4>ĐIỀU KHOẢN SỬ DỤNG</h4><br>
+                   <a href="#">Điều khoản chung</a>
+                   <a href="#">Điều khoản giao dịch</a>
+                   <a href="#">Chính sách thanh toán</a>
+                   <a href="#">Chính sách bảo mật</a>
+                </div>
+                
+                <div class="col-12 col-md-3 mb-4 mb-md-0" id="connect">
+                    <h4 >KẾT NỐI VỚI CHÚNG TÔI</h4><br>
+                    <a href="#">
+                        <img src="https://c7.uihere.com/files/353/468/986/menlo-park-facebook-social-media-computer-icons-social-networking-service-facebook-new-logo-png-thumb.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square1-512.png" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://municipalidadlongavi.cl/wp-content/uploads/2016/05/youtube_001.jpg" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSy2cdwFne0BX1J7iaxzvAc4IlZE2P6T05zyh0pI1IG6AIQogII&usqp=CAU" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://lh3.googleusercontent.com/rFIOt4fDSCgJh_FkHU2qP8YiZUUhfVoKoNfQFbPEM-Wl8zuyuwn7vzkEx_XMh5B6FfO3" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h4>LIÊN HỆ</h4><br>
+                    <div>CÔNG TY CỔ PHẦN FANTASTIC 3 CINEPLEX</div>
+                  
+                    <div>Chăm sóc khách hàng: 1900 8198</div>
+                    <div>Địa chỉ: Tầng 3, số 595, đường Giải Phóng, phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội</div>
+                    <div>Email hỗ trợ: f3cineplex@f3c.com</div>
+                 </div>
+            </div>
+        </div>
+        <div id="copyright" class="text-center">Copyright ©2020 All rights reserved</div>
+    </div>
+   <!-- Khung thời gian mua vé --> 
+    <div id="timeline" class="d-flex justify-content-center align-self-center exit">
+         <div class="row w-100 h-100">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8" id="box-timeline">
+                <div id="title-timeline">LỊCH CHIẾU</div>
+                <div id="close">
+                    <button type="button" class="close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="name-film">Avengers: End Game</div>
+                <div id="day-timeline">
+                    <!--
+                    <div class="atime clicked">01/06</div>
+                    <div class="atime">02/06</div>
+                    <div class="atime">03/06</div>
+                    <div class="atime">04/06</div>
+                    <div class="atime">05/06</div>
+                -->
+                </div>
+                <div id="content-timeline">
+                    <div id="_2d">
+                        <div class="title-format" category="2D">2D PHỤ ĐỀ</div>
+                        <div class="time">
+                            <!--
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">10:00</div>
+                            <div class="time-item">11:00</div>
+                            <div class="time-item">12:00</div>
+                        -->
+                        </div>
+                    </div>
+
+                    <div id="_3d">
+                        <div class="title-format" category="3D">3D PHỤ ĐỀ</div>
+                        <div class="time">
+                            <!--
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">10:00</div>
+                            <div class="time-item">11:00</div>
+                            <div class="time-item">12:00</div>
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+         </div>
+    </div>
+ 
+
+
+    <script src="js/login-register-logout.js"></script>  
+    <script src="js/info-film.js"></script>
+    <script src="js/timeline.js"></script>
+    </body>
+</html>

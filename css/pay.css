@@ -1,0 +1,139 @@
+#pay .container{
+	padding: 30px 100px;
+	border: 2px dashed gray;
+}
+#pay{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#info{
+
+}
+#chair, #food{
+
+}
+#chair > div, #food > div{
+	display: flex;
+	justify-content: space-between;
+}
+
+#total_money, #code, #point{
+	display: flex;
+	justify-content: space-between;
+}
+
+#thong-tin-thanh-toan, #chon-the-ngan-hang{
+	font-family: 'Fira Sans Extra Condensed';
+	margin-bottom: 20px;
+}
+#info .col-sm-3 div:first-child{
+	font-family: 'Asap Condensed';
+	font-size: 20px;
+}
+#info .col-sm-3 div:last-child{
+	font-family: Cabin;
+	font-size: 20px;
+}
+#vip div:first-child, #thuong div:first-child, #doi div:first-child, #happy_combo div:first-child, #sweet_combo div:first-child, #fantastic_combo div:first-child, #point div:first-child, #total_money div:first-child, #code div:first-child{
+	font-family: 'Asap Condensed';
+	font-size: 20px;
+}
+#vip div:last-child, #thuong div:last-child, #doi div:last-child, #happy_combo div:last-child, #sweet_combo div:last-child, #fantastic_combo div:last-child, #point div:last-child, #total_money div:last-child, #code div:last-child{
+	font-family: 'Fira Sans Condensed';
+	font-size: 20px;
+}
+#co-ma-giam-gia, #result_ma_giam_gia, #diem-fantastic, #result_xem_diem, #result_diem_fantastic{
+	font-family: 'Asap Condensed';
+	font-size: 20px;
+}
+#result_diem_fantastic{
+	display: none;
+}
+#xac_nhan_ma_giam_gia, #xem_diem_fantastic{
+	font-family: 'Francois One';
+}
+.selected{
+	outline: 2px solid #5563B6;
+}
+#pay{
+}
+#pay .container{
+	background: #F8F8F8;
+}
+.border-top{
+	border-color: #909498 !important;
+}
+
+
+#xem_diem{
+	width: 100px;
+}
+#ma_giam_gia{
+	width: 300px;
+}
+#ma_giam_gia:focus{
+	box-shadow: none !important;
+}
+
+#button_thanh_toan{
+	background: #1F80A7;
+	box-shadow: 0px 0px 2px 2px #7B8080;
+	display: inline-block;
+	font-family: 'Francois One';
+	padding: 5px 10px;
+	color: white;
+	cursor: pointer;
+}
+#button_thanh_toan:hover{
+	background: #0E698E;
+}
+
+#thanh_toan .row div img{
+	cursor: pointer;
+}
+#bidv{
+
+}
+#vietcombank{
+
+}
+#vietinbank{
+	
+}
+#agribank{
+	
+}
+/*Timer */
+
+#timer{
+	text-align: center;
+	font-family: Cabin Condensed;
+	font-weight: bold;
+
+}
+#title-timer{
+	font-size: 20px;
+	margin-top: 10px;
+
+}
+
+#amount-timer{
+   font-size: 28px;
+   text-anchor: center;
+}
+#amount-timer span{
+	display: inline-block;
+}
+#minute{
+	width: 20px;
+	margin-right: 10px;
+}
+#second{
+	width: 20px;
+}
+#separate{
+	width: 10px;
+}
+
+
+

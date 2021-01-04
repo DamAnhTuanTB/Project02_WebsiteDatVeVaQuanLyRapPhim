@@ -1,0 +1,65 @@
+#page-login{
+	/* https://i.redd.it/u0wz7cuongl11.jpg*/
+	background-image: url(https://static3.srcdn.com/wordpress/wp-content/uploads/2018/04/Marvel-Cinematic-Universe-Marathon.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 18px;
+}
+
+#login-main{
+	height: 500px;
+	background: rgba(0,0,0,0.8);
+}
+
+#login-main h1{
+	font-family: Sniglet;
+	margin-bottom: 10px;
+}
+
+form input{
+	border: none !important;
+	border-radius: 0px !important;
+	background: transparent !important;
+	color: black !important;
+}
+
+.form-control:focus{
+	box-shadow: none !important;
+}
+form i{
+	margin-right: 10px;
+	font-size: 30px;
+}
+form .tag{
+	border-left: 5px solid #2A7D9E;
+	border-right: 5px solid #2A7D9E;
+	margin-bottom: 18px;
+	padding: 3px 3px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 20px;
+}
+form .tag input{
+	font-size: 19px;
+}
+#remember input{
+	transform: scale(2);
+	margin-right: 10px;
+}
+#submit{
+	border: 2px solid white !important;
+	background: #2A7D9E !important;
+	border-radius: 15px !important;
+	font-weight: bold;
+}
+#submit:hover{
+	background: #1A556D !important;
+}
+a{
+	text-decoration: none !important;
+}
+#login-main > div{
+	width: 90%;
+}
+i{
+	color: #495057 !important;
+}

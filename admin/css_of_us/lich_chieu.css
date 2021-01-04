@@ -1,0 +1,19 @@
+#hien_thi_lich_chieu thead th{
+	border: 2px solid black;
+	text-align: center;
+	background: #D2D08D;
+}
+
+#hien_thi_lich_chieu tbody td{
+	border: 2px solid black;
+	text-align: center;
+}
+
+#hien_thi_lich_chieu tbody tr:nth-child(even){
+	background: #E6E5B3;
+}
+#hien_thi_lich_chieu .table-responsive{
+	height: 100vh !important;
+	overflow: auto;
+}
+

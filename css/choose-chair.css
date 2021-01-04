@@ -1,0 +1,263 @@
+
+#choose-chair, #info{
+	background: #F8F8F8;
+	background-clip: border-box;
+}
+#room div div div{
+	cursor: pointer;
+}
+
+#chairs > div{
+	display: flex;
+	align-items: center;
+	margin: 0px 20px;
+}
+#chairs{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	font-family: 'Cabin Condensed';
+	font-size: 19px;
+}
+
+#screen{
+	width: 100%;
+	height: 70px;
+	border-radius: 100%;
+	border-image: radial-gradient(circle, #425FEF, #55B4F1);
+	border-image-slice: 1;
+	border-top: 20px solid;
+	text-align: center;
+	font-weight: bold;
+	margin: 22px 0px 30px 0px;
+	font-family: 'Francois One';
+	font-size: 32px;
+	padding:5px;
+}
+
+
+#state{
+	display: flex;
+	justify-content: center;
+	font-family: 'Cabin Condensed';
+	font-style: italic;
+	font-size: 19px;
+}
+#state > div{
+	display: flex;
+	align-items: center;
+	margin: 0px 20px;
+}
+#daban{
+	width: 20px;
+	height: 20px;
+	background: #2C49DE;
+	margin-right: 5px;
+}
+#danggiu{
+	width: 20px;
+	height: 20px;
+	background: #49F52D;
+	margin-right: 5px;
+}
+#dangchon{
+	width: 20px;
+	height: 20px;
+	background: #DE7C2C;
+	margin-right: 5px;
+}
+
+#casual-chair{
+	width: 58px;
+	height: 58px;
+	background-image: url(../picture/ghethuong.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#vip-chair{
+	width: 58px;
+	height: 58px;
+	background-image: url(../picture/ghevip.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#double-chair{
+	width: 70px;
+	height: 58px;
+	background-image: url(../picture/ghedoi.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7{
+	display: flex;
+	justify-content: center;
+}
+#row-1 > div, #row-2 > div, #row-3 > div{
+	text-align: center;
+	font-weight: bold;
+	color: #1F5313;
+	font-size: 19px;
+	width: 58px;
+	height: 58px;
+	background-image: url(../picture/ghethuong.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 5px;
+}
+.active-ghe-thuong{
+	color: black !important;
+	background-image: url(../picture/ghethuongdangchon.png) !important;
+}
+.ghethuongdaban{
+	background-image: url(../picture/ghethuongdaban.png) !important;
+}
+.ghethuongdanggiu{
+	background-image: url(../picture/ghethuongdanggiu.png) !important;
+}
+
+#row-4 > div, #row-5 > div, #row-6 > div{
+	text-align: center;
+	font-weight: bold;
+	color: #A10E15;
+	font-size: 19px;
+	width: 58px;
+	height: 58px;
+	background-image: url(../picture/ghevip.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 5px;
+}
+.active-ghe-doi{
+	color: black !important;
+	background-image: url(../picture/ghedoidangchon.png) !important;
+}
+.ghedoidaban{
+	background-image: url(../picture/ghedoidaban.png) !important;
+}
+.ghedoidanggiu{
+	background-image: url(../picture/ghedoidanggiu.png) !important;
+}
+
+
+#row-7 > div{
+	text-align: center;
+	font-weight: bold;
+	color: #A61AC0;
+	font-size: 19px;
+	width: 70px;
+	height: 58px;
+	background-image: url(../picture/ghedoi.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 5px 25px;
+}
+.active-ghe-vip{
+	color: black !important;
+	background-image: url(../picture/ghevipdangchon.png) !important;
+}
+.ghevipdaban{
+	background-image: url(../picture/ghevipdaban.png) !important;
+}
+.ghevipdanggiu{
+	background-image: url(../picture/ghevipdanggiu.png) !important;
+}
+
+
+.black-text{
+	color: black !important;
+}
+
+
+.notice{
+	font-style: italic;
+	text-align: center;
+	margin-top: 5px;
+	font-family: 'Cabin Condensed';
+	font-size: 19px;
+}
+
+
+#info .container{
+	border: 3px dashed gray;
+}
+#info img{
+	box-shadow: 0px 0px 3px 2px gray;
+}
+#info .row{
+	font-family: 'Chakra Petch';
+}
+#info .row div{
+	margin-top: 5px;
+	font-size: 20px;
+}
+#info .col-md-6 .col-sm-7{
+	font-weight: bold;
+}
+#info i{
+	margin: 0px 5px;
+}
+#ten_phim{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+
+#thanh_toan{
+	background: #1F80A7;
+	box-shadow: 0px 0px 2px 2px #7B8080;
+	display: inline-block;
+	font-family: 'Francois One';
+	padding: 5px 10px;
+	color: white;
+	cursor: pointer;
+}
+#thanh_toan:hover{
+	background: #0E698E;
+
+}
+#combo h1, #thong_tin_ve h1{
+	font-family: VT323;
+	text-align: center;
+	font-size: 55px;
+}
+#combo .row{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+#combo .row input{
+	width: 50%;
+}
+
+/*Timer */
+
+#timer{
+	text-align: center;
+	font-family: Cabin Condensed;
+	font-weight: bold;
+
+}
+#title-timer{
+	font-size: 20px;
+	margin-top: 10px;
+
+}
+
+#amount-timer{
+   font-size: 28px;
+   text-anchor: center;
+}
+#amount-timer span{
+	display: inline-block;
+}
+#minute{
+	width: 20px;
+	margin-right: 10px;
+}
+#second{
+	width: 20px;
+}
+#separate{
+	width: 10px;
+}

@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="picture/iconlogo.png">
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Thu vien animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Khai bao fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css2?family=Chewy&family=Fira+Sans+Extra+Condensed&family=Asap+Condensed&family=Roboto+Condensed&family=Bungee+Inline&family=VT323&family=Fira+Sans+Extra+Condensed&family=IBM+Plex+Sans&family=Alatsi&family=Source+Sans+Pro&family=Fira+Sans+Extra+Condensed&family=Bangers&family=Bungee+Inline&family=Asap&family=Pangolin&family=Francois+One&family=Cabin&family=Special+Elite&display=swap' rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <!-- Thu vien jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    <title>Phim đang chiếu</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/movie.css">
+    <link rel="stylesheet" type="text/css" href="css/pay-fare.css">
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <style type="text/css">
+        .name-film{
+            display: block;
+            font-family: 'Asap Condensed';
+            font-weight: bold;
+            font-size: 20px;
+            color: #337AB9;
+            word-spacing: 1px;
+            text-align: center;
+            margin: 2px 0px 3px 0px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+ <!-- Thanh đăng nhập, đăng ký -->
+    <div class="bg-dark" id="parent-login-subcrible">
+        <div class="container text-right p-1" id="tab-login-subcrible">
+            <a href="login.html" id="login">Đăng nhập</a>
+            <span>/</span>
+            <a href="register.html" id="subcrible">Đăng ký</a>
+            <img src="https://www.worldglasstech.com/wp-content/uploads/2019/02/Flag-of-Vietnam.gif" width="28px" alt="">
+        </div>
+    </div>
+    <!-- Menu các chuyên mục -->
+    <div id="menu" class="sticky-top">
+        <div class="container d-flex justify-content-center align-items-center p-1">
+            <div class="row w-100 w-100">
+                <div class="col-md-9 col-lg-5">
+                    <div id="logo-sologan" class="d-flex justify-content-center align-items-center">
+                        <img id="logo" src="picture/logo.png" alt="" class="img-fluid">
+                        <div id="sologan">I LOVE YOU 3000</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-7 p-0">
+                    <div id="menus" class="h-100">
+                        <nav class="navbar navbar-expand-lg pr-0 h-100 navbar-light">
+                          <div class="navbar-brand d-block d-lg-none">Menu</div>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav d-flex w-100 justify-content-end">
+                               <a class="nav-item nav-link" href="home.html">TRANG CHỦ</a>
+                              <a class="nav-item nav-link" href="movies-playing.html">PHIM</a>
+                              <a class="nav-item nav-link" href="showtime.html">ĐẶT VÉ</a>
+                              <a class="nav-item nav-link" href="fare.html">GIÁ VÉ</a>
+                              <a class="nav-item nav-link" href="news-events.html">TIN TỨC VÀ SỰ KIỆN</a>
+                              <a class="nav-item nav-link" href="account.html">TÀI KHOẢN</a>
+                            </div>
+                          </div>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+   
+
+
+    <div class="container">
+        <div class="row">
+                <ul class="nav mt-3 mx-auto" style=" font-family:Alatsi">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./movies-playing.html" style="font-family:Slabo 27px; font-size:35px; border-bottom: 7px solid transparent; border-image: linear-gradient(to right, #AAD6EB, #1770DD); border-image-slice: 1; color: #252525 !important">PHIM ĐANG CHIẾU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./movies-upcoming.html"  style="font-family:Slabo 27px; font-size:35px; color: #252525 !important">PHIM SẮP CHIẾU</a>
+                  </li>
+                </ul>
+        </div>
+    </div>
+    <br /> <br />
+    <div class= "container" id= "group-image">
+        
+    </div>
+
+   
+     <!-- Footer -->
+    <div id="footer">
+        <div class="container h-100" >
+            <div class="row py-5" >
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <img class="w-75" src="picture/logo.png">
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Tuyển dụng</a>
+                    <a href="#">Hoạt động xã hội</a>
+                    <a href="#">Liên hệ quảng cáo</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <h4>ĐIỀU KHOẢN SỬ DỤNG</h4><br>
+                   <a href="#">Điều khoản chung</a>
+                   <a href="#">Điều khoản giao dịch</a>
+                   <a href="#">Chính sách thanh toán</a>
+                   <a href="#">Chính sách bảo mật</a>
+                </div>
+                
+                <div class="col-12 col-md-3 mb-4 mb-md-0" id="connect">
+                    <h4 >KẾT NỐI VỚI CHÚNG TÔI</h4><br>
+                    <a href="#">
+                        <img src="https://c7.uihere.com/files/353/468/986/menlo-park-facebook-social-media-computer-icons-social-networking-service-facebook-new-logo-png-thumb.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square1-512.png" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://municipalidadlongavi.cl/wp-content/uploads/2016/05/youtube_001.jpg" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSy2cdwFne0BX1J7iaxzvAc4IlZE2P6T05zyh0pI1IG6AIQogII&usqp=CAU" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://lh3.googleusercontent.com/rFIOt4fDSCgJh_FkHU2qP8YiZUUhfVoKoNfQFbPEM-Wl8zuyuwn7vzkEx_XMh5B6FfO3" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h4>LIÊN HỆ</h4><br>
+                    <div>CÔNG TY CỔ PHẦN FANTASTIC 3 CINEPLEX</div>
+                 
+                    <div>Chăm sóc khách hàng: 1900 8198</div>
+                    <div>Địa chỉ: Tầng 3, số 595, đường Giải Phóng, phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội</div>
+                    <div>Email hỗ trợ: f3cineplex@f3c.com</div>
+                 </div>
+            </div>
+        </div>
+        <div id="copyright" class="text-center">Copyright ©2020 All rights reserved</div>
+    </div>
+    
+    <!-- youtobe -->
+    <div id="youtobe">
+        <div>
+            <h1 id="title">TRAILER </h1>
+            <i class="fas fa-times"></i>
+        </div>
+        <iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- khung_thoi_gian_chieu -->
+    <div id="timeline" class="d-flex justify-content-center align-self-center exit">
+         <div class="row w-100 h-100">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8" id="box-timeline">
+                <div id="title-timeline">LỊCH CHIẾU</div>
+                <div id="close">
+                    <button type="button" class="close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="name-film">Avengers: End Game</div>
+                <div id="day-timeline">
+                    <!--
+                    <div class="atime clicked">01/06</div>
+                    <div class="atime">02/06</div>
+                    <div class="atime">03/06</div>
+                    <div class="atime">04/06</div>
+                    <div class="atime">05/06</div>
+                -->
+                </div>
+                <div id="content-timeline">
+                    <div id="_2d">
+                        <div class="title-format" category="2D">2D PHỤ ĐỀ</div>
+                        <div class="time">
+                            <!--
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">10:00</div>
+                            <div class="time-item">11:00</div>
+                            <div class="time-item">12:00</div>
+                        -->
+                        </div>
+                    </div>
+
+                    <div id="_3d">
+                        <div class="title-format" category="3D">3D PHỤ ĐỀ</div>
+                        <div class="time">
+                            <!--
+                            <div class="time-item">09:00</div>
+                            <div class="time-item">10:00</div>
+                            <div class="time-item">11:00</div>
+                            <div class="time-item">12:00</div>
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+         </div>
+    </div>
+ 
+    
+    <script>
+        $("#group-image img").hover(function(){
+            $($(this).nextAll()[0]).css("display", "block");
+            let _left = ($("#group-image .card-img-top").width() - $("#group-image .row .col-md-3 .card i").width()) / 2;
+            let _top = ($("#group-image .card-img-top").height() - $("#group-image .row .col-md-3 .card i").height()) / 2;
+            $("#group-image .row .col-md-3 .card i").css("left", _left);
+            $("#group-image .row .col-md-3 .card i").css("top", _top);
+        });
+        $("#group-image img").mouseleave(function() {
+            $(this).removeClass('shadow');
+            $($(this).nextAll()[0]).css("display", "none");
+        });
+        $("#group-image .row .col-md-3 .card i").hover(function(){
+            $($(this).siblings()[0]).addClass('shadow');
+            $(this).css("display", "block");
+        });
+        $("#group-image .row .col-md-3 .card i").mouseleave(function(){
+            $(this).css("display", "none");
+        });
+        $("#group-image .row .col-md-3 .card i").click(function(){
+            $("#youtobe").css("display", "flex");
+            $("#youtobe iframe").attr("src", $(this).attr("trailer"));
+        });
+        $(".fa-times").click(function(){
+            $("#youtobe").css("display", "none");
+            $("#youtobe iframe").removeAttr("src");
+        })
+        
+    </script>
+
+    <!-- load phim vào trang -->
+    <script type="text/javascript">
+        $.ajax({
+            url: 'module/function/movies-playing.php',
+            type: 'GET',
+            dataType: 'text',
+            success: function(result) {
+                $('#group-image').append(result);
+            }
+        }); 
+    </script>
+
+  <!-- dua ten phim len sever -->
+    <script type="text/javascript">
+        $("body").on('click', '.row .col-md-3 .card a', function() {
+           
+
+            $.ajax({
+                url: 'module/function/save-info-film.php',
+                type: 'post',
+                dataType: 'text',
+                data : {
+                    ten_phim : $(this).attr("value")
+                }
+            });
+          
+        });
+    </script>
+    <script src="js/timeline.js"></script>
+    <script src="js/login-register-logout.js"></script> 
+
+
+</body>
+</html>

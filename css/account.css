@@ -1,0 +1,152 @@
+#account{
+	background: #F8F8F8;
+}
+
+#menu-account div{
+	font-size: 20px;
+	font-family: Oswald;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#info-account{
+	box-shadow: 0px 0px 5px 2px gray;
+}
+.active{
+	background: #03599D;
+	color: white;
+	transition: 0.3s;
+
+}
+
+i{
+	color: #495057 !important;
+}
+
+.title{
+	padding-left: 8px;
+	font-size: 19px !important;
+}
+
+form input{
+	border: none !important;
+	border-radius: 0px !important;
+	background: transparent !important;
+	color: black !important;
+}
+
+.form-control:focus{
+	box-shadow: none !important;
+}
+
+form i{
+	margin-right: 10px;
+	font-size: 30px;
+}
+
+form .tag{
+	box-shadow: 0px 0px 5px 1px gray;
+	border-left: 5px solid #2A7D9E;
+	border-right: 5px solid #2A7D9E;
+	margin-bottom: 15px;
+	padding: 3px 3px;
+	border-radius: 20px;
+}
+
+form .tag input{
+	font-size: 19px;
+}
+#email{
+	color: gray !important;
+	cursor: not-allowed;
+}
+#update{
+	border: 2px solid #186481 !important;
+	background: #2A7D9E !important;
+	border-radius: 15px !important;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#update:hover{
+	background: #1A556D !important;
+}
+
+#info-account{
+	background: white;
+	padding: 10px;
+}
+#upload{
+	text-align: center;
+}
+#image{
+	text-align: center;
+	line-height: 200px;
+	width: 180px !important;
+	height: 180px !important;
+	background: #EFEFEF;
+	border: 5px solid white;
+	outline: 2px solid gray;
+	margin-left: 20px !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: saturate(1.5);
+	margin-bottom: 10px;
+}
+#upload div{
+	display: inline-block;
+	margin: 10px;
+}
+#form1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#upload-image, #save-image{
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.2s;
+	margin-bottom: 10px;
+}
+#save-image{
+	padding: 7px !important;
+	margin-left: 5px;
+	border-radius: 10px !important;
+	color: white !important;
+}
+#upload-image{
+ width: 250px !important;
+
+}
+#film{
+	background: white;
+	padding: 25px;
+	box-shadow: 0px 0px 5px 2px gray;
+	display: none;
+}
+table thead{
+	background: #C9C9C9;
+	font-size: 19px;
+	border: 2px solid gray !important;
+}
+table thead th{
+	border: 2px solid gray !important;
+}
+#hide{
+	padding: 200px 0px;
+	display: none;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+	color: #17428A;
+	text-align: center;
+}
+#upload-image:hover, #save-image:hover{
+	filter: saturate(2);
+}
+@media screen and (max-width: 576px){
+	#menu-account div{
+		font-size: 18px !important;
+	}
+}

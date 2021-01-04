@@ -1,0 +1,18 @@
+#hien_thi_phim thead th{
+	border: 2px solid black;
+	text-align: center;
+	background: radial-gradient(circle, #73C1F3,#78B0FC);
+	cursor: pointer;
+}
+
+#hien_thi_phim tbody td{
+	border: 2px solid black;
+	text-align: center;
+}
+
+#hien_thi_phim tbody tr:nth-child(even){
+	background: #CBDFE8;
+}
+
+
+

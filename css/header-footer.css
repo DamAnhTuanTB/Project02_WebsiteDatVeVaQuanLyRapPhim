@@ -1,0 +1,134 @@
+/* Header */
+
+body{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+#parent-login-subcrible{
+	height: 30px;
+}
+#tab-login-subcrible{
+	height: 100%;
+	color: white;
+}
+#tab-login-subcrible img{
+	margin-left: 3px;
+}
+#login, #subcrible{
+	color: white;
+	text-decoration-line: none;
+	line-height: 100%;
+	transition: 0.2s;
+	display: inline-block;
+	padding: 0px 1px;
+}
+#login:hover, #subcrible:hover{
+	transform: scale(1.1);
+}
+#menu{
+	background: white;
+	box-shadow: 0px 1px 5px 0px black;
+}
+#sologan{
+	font-family: 'Special Elite';
+	font-size: 35px;
+	white-space: nowrap;
+	margin-left: -3px !important;
+	color: #222121
+}
+#logo{
+	max-width: 55%;
+	height: auto;
+}
+#menus{
+	font-family: 'Fira Sans Extra Condensed';
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.navbar-brand{
+	font-size: 25px;
+}
+.nav-link{
+	white-space: nowrap !important;
+	color: black !important;
+}
+.nav-link:hover{
+	color: #337AB7 !important;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+	.nav-link{
+		font-size: 19px !important;
+	}
+	#sologan{
+		font-size: 28px !important;
+	}
+}
+@media screen and (max-width: 768px){
+    #menu{
+    	position: relative !important;
+    }
+    #logo{
+    	width: 43% !important;
+    }
+    #sologan{
+    	font-size: 26px !important;
+    }
+    #text-intro h4{
+    	font-size: 25px;
+    }
+    #text-intro h1{
+    	font-size: 35px;
+    }
+    #text-intro p{
+    	font-size: 20px;
+    	word-spacing: -3px !important;
+    }
+}
+
+
+/* Footer */
+#footer{
+	border-top: 5px solid #2149AE;
+}
+
+#footer h4{
+	font-family: 'Fira Sans Extra Condensed';
+	border-bottom: 2px solid white;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+#footer a{
+	font-size: 18px;
+	display: block;
+	font-family: 'Roboto Condensed';
+	color: white;
+	text-decoration: none;
+}
+#footer a:hover{
+	color:#337AB9;
+}
+
+#footer{
+	background: #1E1F29;
+	color: white;
+}
+#connect a{
+	display: inline !important;
+}
+#connect img{
+	width: 15%;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.1s;
+}
+#connect img:hover{
+	transform: scale(0.9);
+}
+#copyright{
+	height: 50px;
+	width: 100%;
+	background: #4F4E5E;
+	color: white;
+	line-height: 50px;
+}

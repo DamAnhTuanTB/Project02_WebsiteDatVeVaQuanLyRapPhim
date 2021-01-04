@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="picture/iconlogo.png">
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Thu vien animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Khai bao fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css2?family=Chewy&family=Fira+Sans+Extra+Condensed&family=Asap+Condensed&family=Roboto+Condensed&family=Bungee+Inline&family=VT323&family=Fira+Sans+Extra+Condensed&family=Cabin+Condensed&family=IBM+Plex+Sans&family=Fira+Sans+Extra+Condensed&family=Bangers&family=Bungee+Inline&family=Asap&family=Pangolin&family=Francois+One&family=Cabin&family=Special+Elite&display=swap' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/pay.css">
+    <!-- Thu vien jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+   
+    <title>Fantastic 3 Cineplex</title>
+  </head>
+  <body onbeforeunload="xoa_ghe_dang_giu()">
+    <!-- Thanh đăng nhập, đăng ký -->
+    <div class="bg-dark" id="parent-login-subcrible">
+        <div class="container text-right p-1" id="tab-login-subcrible">
+            <a href="#" id="login">Đăng nhập</a>
+            <span>/</span>
+            <a href="#" id="subcrible">Đăng ký</a>
+            <img src="https://www.worldglasstech.com/wp-content/uploads/2019/02/Flag-of-Vietnam.gif" width="28px" alt="">
+        </div>
+    </div>
+    <!-- Menu các chuyên mục -->
+    <div id="menu" class="sticky-top">
+        <div class="container d-flex justify-content-center align-items-center p-1">
+            <div class="row w-100 w-100">
+                <div class="col-md-9 col-lg-5">
+                    <div id="logo-sologan" class="d-flex justify-content-center align-items-center">
+                        <img id="logo" src="picture/logo.png" alt="" class="img-fluid">
+                        <div id="sologan">I LOVE YOU 3000</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-7 p-0">
+                    <div id="menus" class="h-100">
+                        <nav class="navbar navbar-expand-lg pr-0 h-100 navbar-light">
+                          <div class="navbar-brand d-block d-lg-none">Menu</div>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav d-flex w-100 justify-content-end">
+                              <a class="nav-item nav-link" href="home.html">TRANG CHỦ</a>
+                              <a class="nav-item nav-link" href="movies-playing.html">PHIM</a>
+                              <a class="nav-item nav-link" href="showtime.html">ĐẶT VÉ</a>
+                              <a class="nav-item nav-link" href="fare.html">GIÁ VÉ</a>
+                              <a class="nav-item nav-link" href="news-events.html">TIN TỨC VÀ SỰ KIỆN</a>
+                              <a class="nav-item nav-link" href="account.html">TÀI KHOẢN</a>
+                            </div>
+                          </div>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+   <div id="pay">
+       <div class="container">
+           <h1 class="text-center" id="thong-tin-thanh-toan"><i class="far fa-user-circle mr-2"></i>THÔNG TIN THANH TOÁN</h1>
+
+           <div class="row" id="info">
+               <div class="col-sm-3">
+                   <div>Họ tên</div>
+                   <div id="ho_ten"></div>
+               </div>
+                <div class="col-sm-3">
+                   <div>Ngày sinh</div>
+                   <div id="ngay_sinh"></div>
+               </div>
+               <div class="col-sm-3">
+                   <div>Số điện thoại</div>
+                   <div id="dien_thoai"></div>
+               </div>
+               <div class="col-sm-3">
+                   <div>Email</div>
+                   <div id="email"></div>
+               </div>
+           </div>
+
+           <div id="money" class="mt-4 border-top pt-4">
+               <div id="chair">
+                <!--
+                  <div id="thuong">
+                     <div>Ghế Thường - 3D</div>
+                     <div>1 x 65.000 = 65.000 VNĐ</div>
+                   </div>
+                   <div id="vip">
+                     <div>Ghế VIP - 3D</div>
+                     <div>1 x 65.000 = 65.000 VNĐ</div>
+                   </div>
+                   <div id="doi">
+                     <div>Ghế Đôi - 3D</div>
+                     <div>1 x 65.000 = 65.000 VNĐ</div>
+                   </div>
+                 -->
+               </div>
+               <div id="food">
+                <!--
+                   <div id="happy_combo">
+                       <div>Happy Combo</div>
+                       <div>1 x 50.000 = 50.000 VNĐ</div>
+                   </div>
+                    <div id="sweet_combo">
+                       <div>Sweet Combo</div>
+                       <div>1 x 50.000 = 50.000 VNĐ</div>
+                   </div>
+                    <div id="fantastic_combo">
+                       <div>Fantastic Combo</div>
+                       <div>1 x 50.000 = 50.000 VNĐ</div>
+                   </div>
+                 -->
+               </div>
+                <div id="code">
+                  <!--
+                   <div>Mã giảm giá</div>
+                   <div>- 20.000 VNĐ</div>
+                 -->
+               </div>
+               <div id="point">
+                <!--
+                   <div>Điểm Fantastic</div>
+                   <div>- 10.000 VNĐ</div>
+                 -->
+               </div>
+               <div id="total_money" class="mt-4 border-top pt-4">
+                   <div>Tổng tiền</div>
+                   <div id="_total_money"></div>
+               </div>
+           </div>
+
+           <div id="giam_gia">
+               <div id="ma" class="mt-4 border-top pt-4 text-center">
+                   <label class="" id="co-ma-giam-gia">Có mã giảm giá?</label>
+                   <input type="text" placeholder="MÃ GIẢM GIÁ" maxlength="20" class="form-control d-inline-block" id="ma_giam_gia">
+                   <button type="button" class="ml-2" id="xac_nhan_ma_giam_gia">Xác nhận</button>
+                   <div id="result_ma_giam_gia" class="font-italic">Lưu ý: Khi đã <span class="font-weight-bold">Xác nhận</span>, mã giảm giá coi như đã được dùng.</div>
+               </div>
+               <div id="diem" class="mt-4 border-top pt-4 text-center">
+                    <label id="diem-fantastic">Điểm Fantastic </label>
+                    <input type="number" name="" disabled class="form-control d-inline-block" id="xem_diem">
+                    <button type="button" class="ml-2" id="xem_diem_fantastic">Xem điểm</button>
+                   <div id="result_xem_diem">
+                       <a href="" id="su_dung_diem" class="font-italic"> Sử dụng</a> điểm Fantastic để giảm giá?
+                    </div>
+                 
+               </div>
+
+                <div id="timer">
+                 <div id="title-timer" class="mt-4 border-top pt-4 text-center">THỜI GIAN CÒN LẠI</div>
+                 <div id="amount-timer"><span id="minute">10</span><span id="separate">:</span><span id="second">00</span></div>
+               </div>
+
+           </div>
+
+           <div id="thanh_toan" class="mt-4 border-top pt-4 text-center">
+               <h1 class="text-center" id="chon-the-ngan-hang"><i class="far fa-credit-card mr-2"></i>CHỌN THẺ NGÂN HÀNG</h1>
+               <div class="row">
+                   <div id="bidv" class="col-6 col-sm-3 p-md-5"><img src="picture/bidv.png" alt="" class="img-fluid"></div>
+                   <div id="vietcombank" class="col-6 col-sm-3 py-2"><img src="picture/vietcombank.png" alt="" class="img-fluid"></div>
+                   <div id="vietinbank" class="col-6 col-sm-3 py-2"><img src="picture/Logo_cua_Vietinbank.png" alt="" class="img-fluid"></div>
+                   <div id="agribank" class="col-6 col-sm-3 pt-md-5"><img src="https://pluspng.com/img-png/agribank-png-agribank-logo-big-960.png" alt="" class="img-fluid"></div>
+               </div>
+           </div>
+
+           <div class="text-center">
+               <h4 id="button_thanh_toan" class="mt-4">THANH TOÁN</h4>
+           </div>
+       </div>
+   </div>
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container h-100" >
+            <div class="row py-5" >
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <img class="w-75" src="picture/logo.png">
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Tuyển dụng</a>
+                    <a href="#">Hoạt động xã hội</a>
+                    <a href="#">Liên hệ quảng cáo</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <h4>ĐIỀU KHOẢN SỬ DỤNG</h4><br>
+                   <a href="#">Điều khoản chung</a>
+                   <a href="#">Điều khoản giao dịch</a>
+                   <a href="#">Chính sách thanh toán</a>
+                   <a href="#">Chính sách bảo mật</a>
+                </div>
+                
+                <div class="col-12 col-md-3 mb-4 mb-md-0" id="connect">
+                    <h4 >KẾT NỐI VỚI CHÚNG TÔI</h4><br>
+                    <a href="#">
+                        <img src="https://c7.uihere.com/files/353/468/986/menlo-park-facebook-social-media-computer-icons-social-networking-service-facebook-new-logo-png-thumb.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square1-512.png" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://municipalidadlongavi.cl/wp-content/uploads/2016/05/youtube_001.jpg" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSy2cdwFne0BX1J7iaxzvAc4IlZE2P6T05zyh0pI1IG6AIQogII&usqp=CAU" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://lh3.googleusercontent.com/rFIOt4fDSCgJh_FkHU2qP8YiZUUhfVoKoNfQFbPEM-Wl8zuyuwn7vzkEx_XMh5B6FfO3" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h4>LIÊN HỆ</h4><br>
+                    <div>CÔNG TY CỔ PHẦN FANTASTIC 3 CINEPLEX</div>
+                   
+                    <div>Chăm sóc khách hàng: 1900 8198</div>
+                    <div>Địa chỉ: Tầng 3, số 595, đường Giải Phóng, phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội</div>
+                    <div>Email hỗ trợ: f3cineplex@f3c.com</div>
+                 </div>
+            </div>
+        </div>
+        <div id="copyright" class="text-center">Copyright ©2020 All rights reserved</div>
+    </div>
+    <script src="js/login-register-logout.js"></script>  
+    <script src="js/pay.js"></script>
+    <<script src="js/timer.js"></script>
+<!--  
+<a href="index1.php" target="_blank">Click 1</a> <br>
+<a href="./admin/" target="_blank">Click 2</a> <br>
+<a href="./admin/index2.php" target="_blank">Click 3</a> <br>
+<a href="./admin/index4.html" target="_blank">Click 4</a>
+-->
+  </body>
+</html>

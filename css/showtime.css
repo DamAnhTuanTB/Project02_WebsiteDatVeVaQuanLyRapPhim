@@ -1,0 +1,222 @@
+.carousel-indicators{
+	transform: scale(2);
+}
+.carousel-control-prev, .carousel-control-next{
+		transform: scale(3);
+}
+#carouselExampleIndicators{
+	box-shadow: 0px 1px 5px 1.5px gray;
+}
+#showtime{
+	padding-top: 20px;
+	background: #F8F8F8;
+}
+#showtime .container{
+    background: #F8F8F8;
+}
+.title{
+	display: inline-block;
+	font-size: 65px;
+	font-family: VT323;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 10px solid transparent;
+	border-image: linear-gradient(to right, #AAD6EB, #1770DD);
+	border-image-slice: 1;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 10px !important;
+}
+.nav-tabs{
+	font-size: 30px;
+	font-family: 'Fjalla One';
+	border: none !important;
+}
+a{
+	text-decoration: none !important;
+}
+.nav-tabs .nav-item{
+	padding: 0px 1px;
+	line-height: 100%;
+	box-shadow: 1px 1px 3px 1.5px gray;
+	margin-right: 15px;
+	border-radius: 7px;
+}
+.active{
+	background: transparent !important;
+	border: none !important;
+}
+.click-active{
+	background: linear-gradient(to right, #EAF7EE, #A0A6AA);
+}
+.nav-link:hover{
+	background: transparent !important;
+	border: none !important;
+}
+
+.tab-content{
+	padding-bottom: 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 3px 3px gray;
+	margin-top: 15px;
+	width: 100% !important;
+	margin-bottom: 30px;
+}
+
+.name-film{
+	font-family: 'Patrick Hand SC';
+	text-align: center;
+	margin-top: 40px;
+	font-size: 56px;
+	background-image: linear-gradient(to top, #455361,#1631BA);
+	color: transparent;
+	-webkit-background-clip: text;
+	font-weight: bold;
+}
+.showtime{
+	width: 100% !important;
+	display: flex;
+	padding: 10px 0px;
+	border-bottom: 10px solid transparent;
+	border-image: linear-gradient(to right, #AAD6EB, #1770DD);
+	border-image-slice: 1;
+}
+.showtime .image{
+	padding: 30px !important;
+}
+.showtime .date-time{
+	width: 60%;
+}
+.date-time{
+	padding: 0px 5px ;
+}
+.date-time .time ul{
+	font-family: 'Bungee Inline';
+	font-size: 30px;
+}
+.date-time .time ul li{
+	background: linear-gradient(to right, #EAF7EE, #BECCD2);
+	box-shadow: 0px 0px 2px 3px #CFD5D6;
+	border-radius: 15px;
+	margin: 5px 15px 25px 15px;
+}
+.time ul{
+	display: block !important;
+}
+#_2d, #_3d{
+	margin-top: 30px;
+}
+#_2d div:nth-child(1), #_3d div:nth-child(1){
+	text-align: center;
+}
+#_2d div:nth-child(2), #_3d div:nth-child(2){
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.time #_2d h1{
+	display: inline-block;
+    border-bottom: 2.5px solid #768D9F;
+	width: 28%;
+	background: linear-gradient(45deg,skyblue, #EEFEFF, skyblue, #EEFEFF, skyblue, #EEFEFF, skyblue, #EEFEFF, skyblue, #EEFEFF, skyblue, #EEFEFF, skyblue, #EEFEFF, skyblue, #EEFEFF, skyblue);
+	border-radius: 20px !important;
+	margin-bottom: 20px;
+	color:#1855B1;
+}
+.time #_3d h1{
+	display: inline-block;
+    border-bottom: 2.5px solid #7C9B7B;
+	width: 28%;
+	background: linear-gradient(45deg,#4ECF4B, #EEFEFF, #4ECF4B, #EEFEFF, #4ECF4B, #EEFEFF, #4ECF4B, #EEFEFF,#4ECF4B, #EEFEFF, #4ECF4B, #EEFEFF, #4ECF4B, #EEFEFF, #4ECF4B, #EEFEFF, #4ECF4B);
+	border-radius: 20px !important;
+	margin-bottom: 20px;
+	color:#1A7757;
+}
+.image{
+	width: 40%;
+	text-align: center;
+	position: relative;
+}
+.image img{
+	box-shadow: 0px 0px 3px 1px gray;
+	max-width: 100%;
+	height: auto;
+	border-radius: 35px;
+	transition: 0.3s;
+}
+.image img{
+	cursor: pointer;
+}
+.image img:hover{
+	filter: brightness(0.5);
+}
+@media screen and (max-width: 576px){
+	.carousel-indicators{
+		transform: scale(1);
+	}
+	.carousel-control-prev, .carousel-control-next{
+		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 768px){
+    .title{
+    	font-size: 35px !important;
+    	margin: 0px !important;
+    }
+    .name-film{
+    	font-size: 24px !important
+    }
+    .date-time *{
+    	margin: 0px !important;
+    	padding: 0px !important;
+    }
+    .date-time li{
+    	padding: 2px !important;
+    	margin: 5px !important;
+    	border: 1px solid #1C5C8E !important;
+		box-shadow: 0px 0px 1px 1px #25828A !important;
+    }
+    .date-time a{
+    	font-size: 11px !important;
+    }
+    .nav-tabs{
+    	font-size: 13px !important;
+    }
+    .nav-tabs .nav-item{
+    	margin-right: 10px !important;
+    }
+    .showtime, .title{
+	border-bottom: 5px solid transparent !important;
+	}
+	.time ul{
+		padding: 0px 0px !important;
+	}
+	.time ul li {
+		margin-bottom: 5px !important;
+	} 
+	.nav-tabs .nav-item{
+		margin-bottom: 15px !important;
+	}
+	.nav-tabs .nav-item .nav-link{
+		padding: 6px 8px !important;
+	}
+	.tab-content{
+		margin-top: 0px !important;
+	}
+	.time #_2d h1, .time #_3d h1{
+		font-size: 17px !important;
+	}
+	.time #_2d, .time #_3d{
+		margin-top: -10px !important;
+		padding: 0px !important;
+	}
+	.showtime .image{
+		padding: 5px !important;
+	}
+	.showtime .image img{
+		border-radius: 15px !important;
+	}
+
+}

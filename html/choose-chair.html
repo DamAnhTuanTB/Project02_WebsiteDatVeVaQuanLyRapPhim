@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="picture/iconlogo.png">
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Thu vien animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/choose-chair.css">
+    <!-- Khai bao fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css2?family=Chewy&family=Fira+Sans+Extra+Condensed&family=Asap+Condensed&family=Roboto+Condensed&family=Bungee+Inline&family=VT323&family=Fira+Sans+Extra+Condensed&family=IBM+Plex+Sans&family=Fira+Sans+Extra+Condensed&family=Bangers&family=Bungee+Inline&family=Asap&family=Pangolin&family=Francois+One&family=Cabin&family=Special+Elite&display=swap' rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <!-- Thu vien jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <title>Fantastic 3 Cineplex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+  </head>
+  <body onbeforeunload="xoa_ghe_dang_giu()" onload="xoa_ghe_dang_giu()">
+    <!-- Thanh đăng nhập, đăng ký -->
+    <div class="bg-dark" id="parent-login-subcrible">
+        <div class="container text-right p-1" id="tab-login-subcrible">
+            <a href="#" id="login">Đăng nhập</a>
+            <span>/</span>
+            <a href="#" id="subcrible">Đăng ký</a>
+            <img src="https://www.worldglasstech.com/wp-content/uploads/2019/02/Flag-of-Vietnam.gif" width="28px" alt="">
+        </div>
+    </div>
+    <!-- Menu các chuyên mục -->
+    <div id="menu" class="sticky-top">
+        <div class="container d-flex justify-content-center align-items-center p-1">
+            <div class="row w-100 w-100">
+                <div class="col-md-9 col-lg-5">
+                    <div id="logo-sologan" class="d-flex justify-content-center align-items-center">
+                        <img id="logo" src="picture/logo.png" alt="" class="img-fluid">
+                        <div id="sologan">I LOVE YOU 3000</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-7 p-0">
+                    <div id="menus" class="h-100">
+                        <nav class="navbar navbar-expand-lg pr-0 h-100 navbar-light">
+                          <div class="navbar-brand d-block d-lg-none">Menu</div>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav d-flex w-100 justify-content-end">
+                              <a class="nav-item nav-link" href="home.html">TRANG CHỦ</a>
+                              <a class="nav-item nav-link" href="movies-playing.html">PHIM</a>
+                              <a class="nav-item nav-link" href="showtime.html">ĐẶT VÉ</a>
+                              <a class="nav-item nav-link" href="fare.html">GIÁ VÉ</a>
+                              <a class="nav-item nav-link" href="news-events.html">TIN TỨC VÀ SỰ KIỆN</a>
+                              <a class="nav-item nav-link" href="account.html">TÀI KHOẢN</a>
+                            </div>
+                          </div>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div id="choose-chair" class="pb-5">
+        <div class="container">
+            <div id="chairs">
+                <div>
+                    <div id="casual-chair"></div><span>Ghế thường</span>
+                </div>
+                <div>
+                   <div id="vip-chair"></div><span>Ghế VIP</span>
+                </div>
+                <div>
+                    <div id="double-chair"></div><span>Ghế đôi</span>
+                </div>
+            </div>
+
+            <div id="state" class="mt-2">
+                <div>
+                    <div id="daban"></div><span>Ghế đã bán</span>
+                </div>
+                <div>
+                    <div id="danggiu"></div><span>Ghế bị giữ</span>
+                </div>
+                <div>
+                    <div id="dangchon"></div><span>Ghế đang chọn</span>
+                </div>
+            </div>
+
+            <div id="screen">MÀN HÌNH CHIẾU</div>
+
+            <div id="room">
+                <div id="casual-chairs">
+                    <div id="row-1">
+                        <div>A1</div>
+                        <div>A2</div>
+                        <div>A3</div>
+                        <div>A4</div>
+                        <div>A5</div>
+                        <div>A6</div>
+                        <div>A7</div>
+                        <div>A8</div>
+                        <div>A9</div>
+                        <div>A10</div>
+                        <div>A11</div>
+                        <div>A12</div>
+                    </div>
+                    <div id="row-2">
+                        <div>B1</div>
+                        <div>B2</div>
+                        <div>B3</div>
+                        <div>B4</div>
+                        <div>B5</div>
+                        <div>B6</div>
+                        <div>B7</div>
+                        <div>B8</div>
+                        <div>B9</div>
+                        <div>B10</div>
+                        <div>B11</div>
+                        <div>B12</div>
+                    </div>
+                     <div id="row-3">
+                        <div>C1</div>
+                        <div>C2</div>
+                        <div>C3</div>
+                        <div>C4</div>
+                        <div>C5</div>
+                        <div>C6</div>
+                        <div>C7</div>
+                        <div>C8</div>
+                        <div>C9</div>
+                        <div>C10</div>
+                        <div>C11</div>
+                        <div>C12</div>
+                    </div>
+                </div>
+                <div id="vip-chairs">
+                     <div id="row-4">
+                        <div>D1</div>
+                        <div>D2</div>
+                        <div>D3</div>
+                        <div>D4</div>
+                        <div>D5</div>
+                        <div>D6</div>
+                        <div>D7</div>
+                        <div>D8</div>
+                        <div>D9</div>
+                        <div>D10</div>
+                        <div>D11</div>
+                        <div>D12</div>
+                    </div>
+                    <div id="row-5">
+                        <div>E1</div>
+                        <div>E2</div>
+                        <div>E3</div>
+                        <div>E4</div>
+                        <div>E5</div>
+                        <div>E6</div>
+                        <div>E7</div>
+                        <div>E8</div>
+                        <div>E9</div>
+                        <div>E10</div>
+                        <div>E11</div>
+                    </div>
+                    <div id="row-6">
+                        <div>F1</div>
+                        <div>F2</div>
+                        <div>F3</div>
+                        <div>F4</div>
+                        <div>F5</div>
+                        <div>F6</div>
+                        <div>F7</div>
+                        <div>F8</div>
+                        <div>F9</div>
+                        <div>F10</div>
+                        <div>F11</div>
+                        <div>F12</div>
+                    </div>
+                </div>
+                <div id="double-chairs">
+                     <div id="row-7">
+                        <div>G1-G2</div>
+                        <div>G3-G4</div>
+                        <div>G5-G6</div>
+                        <div>G7-G8</div>
+                        <div>G9-G10</div>
+                    </div>
+                </div>
+                <div class="notice">Nhấn để chọn ghế. Nhấn vào ghế đã chọn để hủy chọn.</div>
+            </div>
+
+            <div id="timer">
+               <div id="title-timer">THỜI GIAN CÒN LẠI</div>
+               <div id="amount-timer"><span id="minute">10</span><span id="separate">:</span><span id="second">00</span></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="info" class="pb-5">
+         <div class="container p-4">
+            <div id="thong_tin_ve">
+                <h1>CHI TIẾT VÉ</h1>
+                 <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-md-4">
+                        <img src="" alt="" class="img-fluid" id="anh">
+                    </div>
+                    <div class="col-md-6 py-3">
+                       <h2 id="ten_phim"></h2>
+                        <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="fas fa-tags"></i>Thể loại</div>
+                            <div class="col-sm-7" id="the_loai"></div>
+                        </div>
+                         <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="fas fa-globe-asia"></i>Ngôn ngữ</div>
+                            <div class="col-sm-7" id="ngon_ngu"></div>
+                        </div>
+                         <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="fas fa-stopwatch"></i>Thời lượng</div>
+                            <div class="col-sm-7" id="thoi_luong"></div>
+                        </div>
+                        <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="far fa-calendar-alt"></i>Ngày chiếu</div>
+                            <div class="col-sm-7" id="ngay_chieu"></div>
+                        </div>
+                         <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="fas fa-clock"></i>Giờ chiếu</div>
+                            <div class="col-sm-7" id="gio_chieu"></div>
+                        </div>
+                        <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="fas fa-desktop"></i>Phòng chiếu</div>
+                            <div class="col-sm-7" id="phong_chieu">P2</div>
+                        </div>
+                        <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="fas fa-eye"></i>Định dạng</div>
+                            <div class="col-sm-7" id="dinh_dang"></div>
+                        </div>
+                        <div class="row px-md-5">
+                            <div class="col-sm-5"><i class="fas fa-crosshairs"></i>Ghế ngồi</div>
+                            <div class="col-sm-7" id="ghe_ngoi"></div>
+                        </div> 
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+             </div>
+            <div id="combo" class="px-4 mt-4">
+                <h1>COMBO ƯU ĐÃI</h1>
+                <div class="row font-weight-bold text-center">
+                   <div class="col-3">Tên Combo</div>
+                   <div class="col-5">Mô tả</div>
+                   <div class="col-2">Giá</div>
+                   <div class="col-2">Số lượng</div>
+                </div>
+                <!--
+                  <div class="row text-center">
+                   <div class="col-3">Happy Combo</div>
+                   <div class="col-5 text-justify">Combo gồm 1 Nước có ga tùy chọn và 1 Bỏng ngô</div>
+                   <div class="col-2">50.000 VNĐ</div>
+                   <div class="col-2"><input type="number" name="" min=0 value="0" id="happy_combo"></div>
+                </div>
+                  <div class="row text-center">
+                   <div class="col-3">Sweet Combo</div>
+                   <div class="col-5 text-justify">Combo gồm 1 Nước có ga tùy chọn, 1 Trà sữa tùy chọn, 1 Bỏng ngô và 1 Túi Bánh quẩy</div>
+                   <div class="col-2"> 90.000 VNĐ</div>
+                   <div class="col-2"><input type="number" name="" min=0 value="0" id="sweet_combo"></div>
+                </div>
+                <div class="row text-center">
+                   <div class="col-3">Fantastic Combo</div>
+                   <div class="col-5 text-justify">Combo gồm 2 Nước có ga tùy chọn, 2 Trà sữa tùy chọn, 2 Bỏng ngô và 2 Túi bánh quẩy</div>
+                   <div class="col-2">150.000 VNĐ</div>
+                   <div class="col-2"><input type="number" name="" min=0 value="0" id="fantastic_combo"></div>
+                </div>
+            -->
+            </div>
+            <div class="text-center mt-5">
+                <h4 id="thanh_toan">TIẾP TỤC</h4>
+            </div>
+         </div>
+    </div>
+   
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container h-100" >
+            <div class="row py-5" >
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <img class="w-75" src="picture/logo.png">
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Tuyển dụng</a>
+                    <a href="#">Hoạt động xã hội</a>
+                    <a href="#">Liên hệ quảng cáo</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mb-4 mb-md-0">
+                    <h4>ĐIỀU KHOẢN SỬ DỤNG</h4><br>
+                   <a href="#">Điều khoản chung</a>
+                   <a href="#">Điều khoản giao dịch</a>
+                   <a href="#">Chính sách thanh toán</a>
+                   <a href="#">Chính sách bảo mật</a>
+                </div>
+                
+                <div class="col-12 col-md-3 mb-4 mb-md-0" id="connect">
+                    <h4 >KẾT NỐI VỚI CHÚNG TÔI</h4><br>
+                    <a href="#">
+                        <img src="https://c7.uihere.com/files/353/468/986/menlo-park-facebook-social-media-computer-icons-social-networking-service-facebook-new-logo-png-thumb.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square1-512.png" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://municipalidadlongavi.cl/wp-content/uploads/2016/05/youtube_001.jpg" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSy2cdwFne0BX1J7iaxzvAc4IlZE2P6T05zyh0pI1IG6AIQogII&usqp=CAU" alt="">
+                    </a>
+                    <a href="#">
+                    <img src="https://lh3.googleusercontent.com/rFIOt4fDSCgJh_FkHU2qP8YiZUUhfVoKoNfQFbPEM-Wl8zuyuwn7vzkEx_XMh5B6FfO3" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h4>LIÊN HỆ</h4><br>
+                    <div>CÔNG TY CỔ PHẦN FANTASTIC 3 CINEPLEX</div>
+                    <div>Chăm sóc khách hàng: 1900 8198</div>
+                    <div>Địa chỉ: Tầng 3, số 595, đường Giải Phóng, phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội</div>
+                    <div>Email hỗ trợ: f3cineplex@f3c.com</div>
+                 </div>
+            </div>
+        </div>
+        <div id="copyright" class="text-center">Copyright ©2020 All rights reserved</div>
+    </div>
+    <script src="js/login-register-logout.js"></script>  
+    <script src="js/choose-chair.js"></script>
+    <script src="js/timer.js"></script>
+<!--  
+<a href="index1.php" target="_blank">Click 1</a> <br>
+<a href="./admin/" target="_blank">Click 2</a> <br>
+<a href="./admin/index2.php" target="_blank">Click 3</a> <br>
+<a href="./admin/index4.html" target="_blank">Click 4</a>
+-->
+  </body>
+</html>

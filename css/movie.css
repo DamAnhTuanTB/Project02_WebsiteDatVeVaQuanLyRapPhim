@@ -1,0 +1,78 @@
+#group-image img:hover{
+	transition: 0.3s;
+	filter: brightness(0.5);
+}
+#group-image .row .col-md-3 .card i{
+	cursor: pointer;
+}
+.shadow{
+	filter: brightness(0.5);
+}
+.fa-play-circle{
+	display: none;
+	position: absolute;
+	font-size: 50px;
+	color: white;
+}
+
+
+/* Youtobe */
+#youtobe{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 98.9vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.7);
+	z-index: 1000000;
+}
+#load{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 98.9vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #182545;
+	z-index: 1000000;
+}
+.spinner-border{
+	color: white;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+#youtobe div{
+	text-align: center;
+	width: 55%;
+	position: relative;
+}
+#youtobe iframe{
+	background: white;
+	border: 8px solid white;
+	border-radius: 5px;
+	width: 55%;
+	height: 65%;
+}
+#youtobe #title{
+	display: inline-block;
+	color: white;
+	border-bottom: 2px solid white;
+	padding: 0px 15px;
+}
+#youtobe .fa-times{
+	cursor: pointer;
+	color: white;
+	font-size: 40px;
+	line-height: 100%;
+	position: absolute;
+	top:7px;
+	right: 0px;
+}
+

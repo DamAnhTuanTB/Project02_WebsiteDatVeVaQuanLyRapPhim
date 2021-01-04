@@ -1,0 +1,23 @@
+ .pay-fare{
+ 	height: 30px;
+ 	width: 50%; 
+ 	margin: 10px auto 0px auto; 
+ 	background: linear-gradient(to right, #337AB7, #2B96D8);
+ 	text-align: center; 
+ 	cursor: pointer; 
+ 	line-height: 30px; 
+ 	border-radius: 4px;
+ 	color: white;
+ 	font-family: Asap Condensed;
+ 	font-weight: bold;
+ 	font-size: 17px;
+ 	letter-spacing: 1px;
+ }
+ 
+ .pay-fare:hover{
+ 	background: linear-gradient(to right, #2A6292, #2786C1);
+ }
+
+ .pay-fare::before{
+ 	
+ }
